@@ -1,4 +1,4 @@
-/* Cole Consulting — shared site behavior */
+/* Cole Consulting & Solutions — shared site behavior */
 (function () {
   "use strict";
 
