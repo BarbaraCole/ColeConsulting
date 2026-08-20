@@ -1,6 +1,6 @@
-# Cole Training & Consulting — Website
+# Cole Consulting & Solutions — Website
 
-A static, five-page marketing site for Cole Training & Consulting. Pure HTML/CSS/JS —
+A static, five-page marketing site for Cole Consulting & Solutions. Pure HTML/CSS/JS —
 no build step, no dependencies, ready to push to GitHub and host on Netlify.
 
 ## File structure
