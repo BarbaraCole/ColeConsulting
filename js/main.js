@@ -91,7 +91,7 @@
           counterIO.unobserve(el);
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.2, rootMargin: "0px 0px -40px 0px" }
     );
     counters.forEach(function (el) { counterIO.observe(el); });
   }
