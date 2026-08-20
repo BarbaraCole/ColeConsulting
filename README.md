@@ -1,12 +1,12 @@
-# Cole Consulting — Website
+# Cole Training & Consulting — Website
 
-A static, five-page marketing site for Cole Consulting. Pure HTML/CSS/JS —
+A static, five-page marketing site for Cole Training & Consulting. Pure HTML/CSS/JS —
 no build step, no dependencies, ready to push to GitHub and host on Netlify.
 
 ## File structure
 
 ```
-Cole Consulting/
+Cole Consulting/            (repo folder name)
 ├── index.html          Home
 ├── about.html           About / founder / principles
 ├── services.html        Services detail (4 disciplines)
@@ -79,7 +79,7 @@ Search each file for text in `[brackets]` — that's everything left for you
 to fill in. The major items:
 
 - [ ] Company tagline / hero copy (currently drafted, feel free to keep or rewrite)
-- [ ] Founder name, title, and bio — `about.html` (currently defaults to "Barbara Cole")
+- [x] Founder name, title, and bio — `about.html` (Barbara Cole's bio is filled in)
 - [ ] Email, phone, and office address — footer (all pages) and `contact.html`
 - [ ] Social links (LinkedIn, Instagram, X) — footer (all pages) and `contact.html`
 - [ ] Stats on the home page (`120+`, `18`, `94%`, `12+`) — replace with real figures
