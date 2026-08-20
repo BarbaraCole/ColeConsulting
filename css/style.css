@@ -536,19 +536,26 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6.5px) rota
   .index-row { grid-template-columns: 40px 1fr auto; padding: 22px 0; }
 }
 
-/* Column span helpers for the 12-col grid */
-.span-3 { grid-column: span 3; }
-.span-4 { grid-column: span 4; }
-.span-5 { grid-column: span 5; }
-.span-6 { grid-column: span 6; }
-.span-7 { grid-column: span 7; }
-.span-8 { grid-column: span 8; }
-.span-9 { grid-column: span 9; }
-.span-12 { grid-column: span 12; }
+/* Column span helpers for the 12-col grid.
+   Set only grid-column-end (not the grid-column shorthand) so these compose
+   safely with .col-start-N below — the shorthand would otherwise assign the
+   span to grid-column-start, which a later grid-column-start rule silently
+   wipes out, collapsing the item to a single track. */
+.span-3 { grid-column-end: span 3; }
+.span-4 { grid-column-end: span 4; }
+.span-5 { grid-column-end: span 5; }
+.span-6 { grid-column-end: span 6; }
+.span-7 { grid-column-end: span 7; }
+.span-8 { grid-column-end: span 8; }
+.span-9 { grid-column-end: span 9; }
+.span-12 { grid-column-end: span 12; }
 .col-start-2 { grid-column-start: 2; }
 .col-start-3 { grid-column-start: 3; }
 .col-start-5 { grid-column-start: 5; }
+.col-start-6 { grid-column-start: 6; }
 .col-start-7 { grid-column-start: 7; }
+.col-start-8 { grid-column-start: 8; }
+.col-start-9 { grid-column-start: 9; }
 
 /* ---------- Contact form ---------- */
 .form-field { border-bottom: 1px solid var(--line-dark); padding: 18px 0; }
