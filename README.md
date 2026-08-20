@@ -80,7 +80,8 @@ to fill in. The major items:
 
 - [ ] Company tagline / hero copy (currently drafted, feel free to keep or rewrite)
 - [x] Founder name, title, and bio — `about.html` (Barbara Cole's bio is filled in)
-- [ ] Email, phone, and office address — footer (all pages) and `contact.html`
+- [x] Phone and city filled in ((613) 854-8548, Ottawa, Canada); email set to
+      hello@coleassessment.ca pending real inbox/forwarding setup — see note below
 - [ ] Social links (LinkedIn, Instagram, X) — footer (all pages) and `contact.html`
 - [ ] Stats on the home page (`120+`, `18`, `94%`, `12+`) — replace with real figures
 - [ ] Case studies on `index.html` and `work.html` — client names, categories, years, summaries
@@ -90,6 +91,48 @@ to fill in. The major items:
 - [ ] All placeholder photography (see above)
 - [ ] `robots.txt` sitemap URL and any canonical domain references once you have one
 - [ ] Footer credit line ("Site by [Your Name]")
+
+## Email setup (action needed)
+
+The site displays `hello@coleassessment.ca` — using **coleassessment.ca**
+(your live, registered domain at Hover) rather than the earlier placeholder
+`coleconsultingsolutions.com`, which isn't a domain you own and so could
+never actually receive mail. This address won't work until you set up
+forwarding, since Hover doesn't create an inbox automatically:
+
+1. Log in to Hover → your domain → **Email** tab.
+2. Add an email forward: `hello@coleassessment.ca` → `barbaramcole@icloud.com`.
+   (Hover's free tier includes a limited number of forwarding addresses;
+   check your plan if it asks you to upgrade.)
+3. Save. Forwarding is usually active within a few minutes.
+
+I can't do this step myself — it requires signing in to your Hover account.
+
+## Brand taglines
+
+Short positioning statements drafted for this site. Some are already placed;
+the rest are a reserve bank — swap any of them into a lede, footer line, or
+new section as the site evolves.
+
+**Currently in use:**
+- Footer mission line (all pages) — "Complex problems. Clear solutions."
+- Homepage positioning statement — "Solutions for a changing world. Bringing
+  together human expertise, technology and innovative thinking to solve
+  complex organizational and business challenges."
+- Homepage Perspectives intro — "Insight that drives better decisions."
+- Homepage "How We Operate" intro (`about.html`) — "Clarity in complexity.
+  Solutions that work."
+- Services "Engagement models" intro (`services.html`) — "Making complexity
+  work for you."
+- Contact page hero — "Connecting insight to action."
+- Contact page brand-banner caption — "Solutions built around what matters."
+- Work page hero — "Better insight. Smarter solutions."
+- Work page tools intro — "Strategic thinking. Practical solutions."
+
+**In reserve (not yet placed):**
+- From complexity to clarity.
+- Insight. Innovation. Solutions.
+- Where complexity meets clarity.
 
 ## Browser support
 
