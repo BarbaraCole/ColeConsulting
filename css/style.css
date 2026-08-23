@@ -348,8 +348,11 @@ body.nav-open .site-header { backdrop-filter: none; }
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.04em;
+  background: var(--black);
+  color: var(--white);
+  padding: 6px 10px;
 }
-.lang-toggle .lang-current { opacity: 1; }
+.lang-toggle .lang-current { opacity: 1; color: var(--white); }
 .lang-toggle .lang-sep { opacity: 0.35; }
 .lang-toggle .lang-link { opacity: 0.55; transition: opacity var(--dur-fast) var(--ease); }
 .lang-toggle .lang-link:hover { opacity: 1; }
