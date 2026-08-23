@@ -113,6 +113,13 @@ h1, h2, h3, h4 {
 .text-accent { color: var(--green); }
 .text-dim { color: rgba(10,10,10,0.5); }
 
+.rotate-word {
+  color: var(--green);
+  display: inline-block;
+  transition: opacity var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
+}
+.rotate-word.is-swapping { opacity: 0; transform: translateY(8px); }
+
 .hero-focus {
   font-family: var(--font-body);
   font-size: clamp(1rem, 1.3vw, 1.25rem);

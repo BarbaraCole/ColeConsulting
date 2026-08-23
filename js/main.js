@@ -105,6 +105,24 @@
     });
   });
 
+  /* Rotating CTA word */
+  var rotators = document.querySelectorAll("[data-rotate-words]");
+  if (rotators.length && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    rotators.forEach(function (el) {
+      var words = el.getAttribute("data-rotate-words").split(",").map(function (w) { return w.trim(); });
+      if (words.length < 2) return;
+      var i = 0;
+      setInterval(function () {
+        el.classList.add("is-swapping");
+        setTimeout(function () {
+          i = (i + 1) % words.length;
+          el.textContent = words[i];
+          el.classList.remove("is-swapping");
+        }, 220);
+      }, 2200);
+    });
+  }
+
   /* Footer year */
   document.querySelectorAll("[data-year]").forEach(function (el) {
     el.textContent = new Date().getFullYear();
