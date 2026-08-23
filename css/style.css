@@ -344,14 +344,15 @@ body.nav-open .site-header { backdrop-filter: none; }
 .lang-toggle {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.04em;
-  opacity: 0.75;
-  transition: opacity var(--dur-fast) var(--ease);
 }
-.lang-toggle:hover { opacity: 1; }
+.lang-toggle .lang-current { opacity: 1; }
+.lang-toggle .lang-sep { opacity: 0.35; }
+.lang-toggle .lang-link { opacity: 0.55; transition: opacity var(--dur-fast) var(--ease); }
+.lang-toggle .lang-link:hover { opacity: 1; }
 
 .nav-toggle {
   display: none;
@@ -479,6 +480,23 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6.5px) rota
 .ratio-ultra { aspect-ratio: 21 / 9; }
 .ratio-tall { aspect-ratio: 3 / 4; }
 .ratio-banner { aspect-ratio: 930 / 232; }
+.ratio-banner-fr { aspect-ratio: 480 / 232; }
+.banner-caption {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.3rem, 3.4vw, 2.4rem);
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  padding: 0 24px;
+  pointer-events: none;
+}
 
 /* ---------- Marquee ---------- */
 .marquee-band {
