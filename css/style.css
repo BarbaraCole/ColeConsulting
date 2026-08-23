@@ -272,6 +272,12 @@ body.theme-dark .site-header.is-scrolled {
    so the panel positions against the viewport rather than the header. */
 body.nav-open .site-header { backdrop-filter: none; }
 @media (max-width: 980px) {
+  /* Any backdrop-filter on .site-header (even blur(0px), even when not scrolled)
+     makes it a containing block for the fixed-position mobile nav panel, so the
+     panel's inset:0/translateY(-100%) resolve against the header's small box
+     instead of the full viewport — leaving it only partially hidden. Strip
+     backdrop-filter on mobile unconditionally, not just while nav-open. */
+  .site-header, .site-header.is-scrolled { backdrop-filter: none; }
   /* The open nav panel is dark full-screen — keep the logo/toggle visible above it */
   body.nav-open .site-header .logo,
   body.nav-open .site-header .logo * { color: var(--white); }
