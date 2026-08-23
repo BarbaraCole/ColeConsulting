@@ -517,6 +517,10 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6.5px) rota
   transition: border-color var(--dur-fast) var(--ease);
 }
 .card-plain:hover { border-color: var(--ink); }
+.on-dark .card-plain { border-color: var(--line-dark); }
+.on-dark .card-plain:hover { border-color: var(--white); }
+.on-dark .body-text { color: rgba(255,255,255,0.68); }
+.on-dark .eyebrow.muted { color: rgba(255,255,255,0.5); }
 
 /* Pull quote */
 .pull-quote {
