@@ -341,6 +341,18 @@ body.nav-open .site-header { backdrop-filter: none; }
 }
 .nav-contact:hover { background: var(--ink); color: var(--white); }
 
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  opacity: 0.75;
+  transition: opacity var(--dur-fast) var(--ease);
+}
+.lang-toggle:hover { opacity: 1; }
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -418,6 +430,7 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6.5px) rota
   .mega-links { grid-template-columns: 1fr; gap: 20px; }
   .nav-contact { margin-top: 30px; border-color: var(--white); }
   .nav-contact:hover { background: var(--white); color: var(--black); }
+  .lang-toggle { margin-top: 20px; }
 }
 
 /* ---------- Media / Images ---------- */
