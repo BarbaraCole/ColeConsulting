@@ -119,6 +119,7 @@ h1, h2, h3, h4 {
   transition: opacity var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
 }
 .rotate-word.is-swapping { opacity: 0; transform: translateY(8px); }
+.rotate-word-wrap { display: inline-block; white-space: nowrap; }
 
 .hero-focus {
   font-family: var(--font-body);
