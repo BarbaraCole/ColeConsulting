@@ -435,6 +435,7 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6.5px) rota
 .media:hover img { transform: scale(1.045); }
 /* Deliberate exception to the monochrome system — use sparingly */
 .media.full-color img { filter: none; }
+.media.bright img { filter: grayscale(1) contrast(1) brightness(1.42); }
 .media.duotone::after {
   content: "";
   position: absolute; inset: 0;
