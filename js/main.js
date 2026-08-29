@@ -111,6 +111,13 @@
     rotators.forEach(function (el) {
       var words = el.getAttribute("data-rotate-words").split(",").map(function (w) { return w.trim(); });
       if (words.length < 2) return;
+      /* Optional companion words (e.g. a gender-agreeing article/adjective) that
+         swap in lockstep with this rotator, driven by the same index. */
+      var syncEls = el.id ? document.querySelectorAll('[data-rotate-sync="' + el.id + '"]') : [];
+      var syncLists = [];
+      syncEls.forEach(function (s) {
+        syncLists.push((s.getAttribute("data-rotate-variants") || "").split(",").map(function (w) { return w.trim(); }));
+      });
       var i = 0;
       setInterval(function () {
         el.classList.add("is-swapping");
@@ -118,6 +125,10 @@
           i = (i + 1) % words.length;
           el.textContent = words[i];
           el.classList.remove("is-swapping");
+          syncEls.forEach(function (s, idx) {
+            var list = syncLists[idx];
+            if (list && list.length) s.textContent = list[i % list.length];
+          });
         }, 220);
       }, 2200);
     });
